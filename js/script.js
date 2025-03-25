@@ -9,15 +9,6 @@ function salvarUsuario(){
         roles: document.getElementById("roles").value
     }
     console.log(usuario);
-    //formato json
-    // {
-    //     "name": "John Doe",
-    //     "email": "john@example.com",
-    //     "phone": "123456789",
-    //     "password":"123",
-    //     "birthDate": "1990-01-01",
-    //     "roles": "USER"
-    // }
     //envia os dados para a API(backend)
     //substituir o postman(mesmos dados)
     fetch("http://localhost:8080/api/users",{

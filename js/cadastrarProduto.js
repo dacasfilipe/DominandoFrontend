@@ -12,9 +12,11 @@ function carregarCategorias(){
         });
     }).catch(error => console.error("Erro ao carregar categorias:",error))
 }
+
 document.addEventListener("DOMContentLoaded",function(){
     carregarCategorias();
 })
+
 function cadastrarProduto(){
     //cria um objeto usuario
     //converte categorias para numeros
@@ -36,6 +38,6 @@ function cadastrarProduto(){
         body: JSON.stringify(produto)
     })
     .then(response => response.json())
-    .then(data => console.log("Usuário salvo:", data))
-    .catch(error => console.error("Erro ao salvar usuário:", error));
+    .then(data => console.log("Produto salvo:", data))
+    .catch(error => console.error("Erro ao salvar produto:", error));
 }

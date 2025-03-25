@@ -26,7 +26,8 @@ function cadastrarProduto(){
     let selectedCategories = Array.from(document.getElementById("category")
         .selectedOptions).map(option => {
             // Encontre a categoria completa pelo ID
-            return allCategories.find(category => category.id === Number(option.value));
+            return allCategories.find(category => category.id === 
+                Number(option.value));
         });
     let produto = {
         name: document.getElementById("nome").value,
